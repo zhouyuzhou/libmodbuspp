@@ -97,7 +97,7 @@ int main (int argc, char **argv) {
   CmdLine.add<popl::Value<string>> ("c", "connection",
                                     "host or serial port when using ModBus protocol\n"
                                     "(e.g. /dev/ttyS1 for RTU, 127.0.0.1 for TCP)",
-                                    "127.0.0.1", &connection);
+                                    "0.0.0.0", &connection);
   CmdLine.add<popl::Value<string>> ("s", "settings", "connection settings\n"
                                     "(e.g. 38400E1 for RTU, 1502 port for TCP)",
                                     "1502", &settings);
